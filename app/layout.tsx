@@ -25,19 +25,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <body
+        className={`${inter.variable} ${geistMono.variable} antialiased`}
+        >
       <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
-            {children}
-      <body
-        className={`${inter.variable} ${geistMono.variable} antialiased`}
-        >
         {children}
-      </body>
         </ThemeProvider>
+      </body>
     </html>
   );
 }
